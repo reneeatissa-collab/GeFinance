@@ -1,0 +1,76 @@
+import { Investor } from '../types';
+
+export const INVESTORS: Investor[] = [
+  {
+    id: 'inv_1',
+    name: 'Dra. Samira Matsinhe & Eng. Carlos Sitoe',
+    organization: 'Fundo Moçambique Crescimento Verde (FMCV)',
+    type: 'Fundo de Impacto',
+    location: 'Maputo, Moçambique',
+    targetSectors: ['Agronegócio Sustentável', 'Energia Solar', 'Logística & Cadeia de Frio', 'Gestão de Resíduos'],
+    minTicket: 1500000, // em MT (equivalente a ~25k USD)
+    maxTicket: 15000000, // em MT (equivalente a ~250k USD)
+    esgPreference: 'Alto',
+    bio: 'Fundo de impacto focado em PMEs moçambicanas com alto potencial de geração de emprego formal, conteúdo local e redução de pegada ecológica. Exigimos contabilidade transparente e score ESG comprovado.',
+    avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80',
+    feedbackTemplates: {
+      approved: 'Ficamos muito impressionados com a maturidade operacional e o alinhamento ESG da sua empresa! Gostaríamos de propor um Term Sheet inicial para investimento direto.',
+      moreInfoNeeded: 'Sua proposta tem excelente mérito, mas precisamos analisar detalhadamente o fluxo de caixa histórico e como você pretende mitigar a volatilidade cambial.',
+      rejected: 'No momento, o seu Score ESG ou modelo de receita ainda está em estágio inicial para os critérios regulatórios do nosso fundo.',
+    },
+  },
+  {
+    id: 'inv_2',
+    name: 'Dr. Fernando Langa',
+    organization: 'BCI PME Capital & Linha de Crédito PAE',
+    type: 'Banco de Desenvolvimento',
+    location: 'Maputo & Beira, Moçambique',
+    targetSectors: ['Manufatura Leve', 'Comércio Geral', 'Construção Sustentável', 'Transportes'],
+    minTicket: 500000,
+    maxTicket: 25000000,
+    esgPreference: 'Médio',
+    bio: 'Linhas de financiamento com juros bonificados para apoio ao setor privado nacional e fomento a empresas que substituem importações e recolhem impostos regularmente.',
+    avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
+    feedbackTemplates: {
+      approved: 'Seu plano de negócios cumpre todos os requisitos de elegibilidade bancária! Podemos avançar para a emissão da carta-conforto e estruturação da linha bonificada.',
+      moreInfoNeeded: 'Precisamos da certidão de quitação fiscal atualizada perante a Autoridade Tributária e balanço dos últimos dois exercícios para aprovar o limite.',
+      rejected: 'O prazo de retorno e o endividamento atual estão além dos limites prudenciais de risco de crédito estabelecidos pelo Banco Central.',
+    },
+  },
+  {
+    id: 'inv_3',
+    name: 'Clara Van Der Merwe & Thabo Mokoena',
+    organization: 'Southern Africa Climate Ventures (SACV)',
+    type: 'Fundo ESG Internacional',
+    location: 'Joanesburgo, África do Sul & Maputo',
+    targetSectors: ['Tecnologia Limpa', 'Bioeconomia', 'Eletrificação Rural', 'SaaS & Fintech'],
+    minTicket: 3000000,
+    maxTicket: 50000000,
+    esgPreference: 'Alto',
+    bio: 'Investimos em negócios escaláveis no corredor sul da África (Moçambique, África do Sul, Namíbia e Zâmbia) que combinem tecnologia digital com impacto ambiental mensurável.',
+    avatarUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80',
+    feedbackTemplates: {
+      approved: 'Excelente tese de escala! Identificamos grande sinergia com o mercado da SADC e queremos liderar a rodada Seed/Série A da sua empresa.',
+      moreInfoNeeded: 'Gostaríamos de agendar uma chamada técnica para validar os dados de emissão de carbono evitadas e o custo unitário por cliente.',
+      rejected: 'Buscamos empresas que já possuam tração comprovada em escala transfronteiriça com faturamento mensal consistente.',
+    },
+  },
+  {
+    id: 'inv_4',
+    name: 'Rede de Investidores Anjo Lusófonos',
+    organization: 'Lusofonia Angels Club',
+    type: 'Investidor Anjo',
+    location: 'Lisboa, Luanda e Maputo',
+    targetSectors: ['Comércio Digital', 'Serviços B2B', 'Educação', 'Agronegócio'],
+    minTicket: 300000,
+    maxTicket: 3500000,
+    esgPreference: 'Médio',
+    bio: 'Rede de executivos e empreendedores de sucesso que fornecem Smart Money (capital + mentoria + rede de contatos) para fundadores determinados em Moçambique, Angola e Brasil.',
+    avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
+    feedbackTemplates: {
+      approved: 'Adoramos a dedicação e clareza da liderança fundadora! Estamos prontos para aportar o capital anjo e abrir portas comerciais.',
+      moreInfoNeeded: 'Gostaríamos de conhecer melhor a equipe executiva e ver o protótipo funcional ou depoimentos de clientes ativos.',
+      rejected: 'O modelo de negócio ainda requer maior validação prática com clientes pagantes antes de justificar capital anjo.',
+    },
+  },
+];

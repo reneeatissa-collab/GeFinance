@@ -1,0 +1,6 @@
+{
+  "name": "GeFinance",
+  "description": "Plataforma de gestão financeira com modelos estratégicos (SWOT, PESTEL, Porter, BMC), fluxo de caixa em tempo real, projeções automáticas, módulo ESG com investidores e análise macroeconômica com foco em Moçambique e mercados globais.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
